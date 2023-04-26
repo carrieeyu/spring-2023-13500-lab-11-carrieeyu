@@ -7,8 +7,10 @@ std:: string Profile:: getUsername(){ //"Profile:: " refers to the private class
   return username; //returns username
 }
 
+//returns name in the format: "displayname (@username)"
 std:: string Profile:: getFullName(){
-  return displayname; //returns name in the format: "displayname (@username)"
+  std:: string atUsername = " (@" + username + ")";
+  return displayname + atUsername;
 }
 
 void Profile:: setDisplayName(std:: string dspn){ //change display name
