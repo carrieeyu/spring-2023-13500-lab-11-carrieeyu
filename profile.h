@@ -21,5 +21,5 @@ public:
     std:: string getUsername(); //Return username
     std:: string getFullName(); // Return name in the format: "displayname (@username)"
     void setDisplayName(std:: string dspn); //Change display name
-};
 
+};
